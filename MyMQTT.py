@@ -37,7 +37,6 @@ class MyMQTT:
 		self._topic = topic
 
 	def start(self):
-		#manage connection to broker
 		self._paho_mqtt.connect(self.broker , self.port)
 		self._paho_mqtt.loop_start()
 
